@@ -1,0 +1,256 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+% 
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\title{David's Resume: One column}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{One-Column Resume}
+\namesection{David}{Russell}{
+%Campus: Clarkson Box 7223., Potsdam, NY 13699\\
+\href{mailto:russeldj@clarkson.edu}{russeldj@clarkson.edu} \hspace{1cm} 603.454.8141 \hspace{1cm} 146 Village Rd., Wilmot, NH}\\  
+\vspace{18pt}
+\section{Education}
+\runsubsection{Clarkson University}
+\hfill
+\location{}
+\descript{Pursuing B.S. in Computer Science (Honors)}
+\descript{Minor in Mathematics}
+\location{Anticipated Graduation May 2020 |  GPA: \custombold{4.0}}
+\sectionsep
+
+
+%  \begin{minipage}[t]{.2\textwidth}
+%  interests\\
+%  Computer Vision\\
+%  \end{minipage}
+
+\begin{minipage}[t]{.6\textwidth}
+\section{Skills}
+\begin{minipage}[t]{.3\textwidth}
+ \textbullet{}Computer Vision\\
+ \textbullet{}Robotics\\
+ \textbullet{}Deep Learning\\
+ \hfill
+\end{minipage}
+\begin{minipage}[t]{.22\textwidth}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+%\begin{tightemize}
+ \textbullet{}Python\\
+ \textbullet{}C++\\
+ \textbullet{}MATLAB\\
+ %\textbullet{}Java\\
+ %\textbullet{} National AP Scholar\\
+%\end{tightemize}
+\end{minipage}
+\begin{minipage}[t]{.22\textwidth}
+\textbullet{}OpenCV\\
+\textbullet{}PyTorch\\
+\textbullet{}TensorFlow\\
+%\textbullet{}SciPy\\
+\end{minipage}
+\begin{minipage}[t]{.22\textwidth}
+\textbullet{}GPU stack\\
+\textbullet{}Linux\\
+\textbullet{}Git\\
+%\textbullet{}Server-side dev\\
+\end{minipage}
+%computer vision
+\sectionsep
+\end{minipage}
+\section{Experience}
+\runsubsection{Research Assistant}
+\hfill
+\location{June 2018 - November 2018}
+\descript{The Robotics Institute, Carnegie Mellon University}
+\begin{tightemize}
+\item Researching occlusion-robust object tracking under the advisement of Prof. Martial Hebert%, the Robotics Institute director 
+\item Currently using Mask R-CNN and a tracking-by-detection approach
+\end{tightemize}
+
+\sectionsep
+\runsubsection{Research and Development Intern}
+\hfill
+\location{January 2018 - May 2018}
+\descript{Kitware Inc.}
+\begin{tightemize}
+\item Explored approaches for low-shot detection in overhead imagery using C++ and Python/Pytorch
+\item Performed structure from motion and mapping experiments with aerial video
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Robotics Institute Summer Scholar}
+\hfill
+\location{June 2017 - August 2017}
+\descript{The Robotics Institute, Carnegie Mellon University}
+\begin{tightemize}
+\item Worked with Prof. Stelian Coros on a generalizable sensing strategy for soft robots that utlized RFID tags and physics-based simulations
+\item Conceptualized and implemented C++ simulation software and built physical test models 
+%\item Continued working remotely to prepare project for publication
+
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Undergraduate Researcher}
+\hfill 
+\location{June 2016 - December 2017}
+%\runsubsection{Undergraduate Researcher}
+
+%\descript{| Drs. Banerjee, Clarkson University}
+\descript{Lab of Drs. Banerjee, Clarkson University}
+
+\begin{tightemize}
+\item Generated and analyzed thermally-textured point clouds using a FLIR thermal camera and an XBox Kinect 
+%\item Designed parameterized camera calibration objects that could be easily 3D printed and assembled 
+\item Improved retrofit kit to synchronization multiple Microsoft Kinects for low-cost motion capture
+%\item Presented findings at the Symposium for Undergraduate Research Experience (SURE); received awards for oral presentation and poster 
+\end{tightemize}
+\sectionsep
+
+%\runsubsection{Machine Shop Assistant}
+%\hfill
+%\location{June 2015 – August 2015}
+%\descript{Thayer School Machine Shop, Dartmouth College}
+%\begin{tightemize}
+%\item Worked with graduate students to teach material science labs for ENGs 3: Substances of Civilization and kept the shop clean, safe, and productive
+%%\item Applied 5S principles to keep the shop clean, safe, and productive
+%\end{tightemize}
+
+
+
+%\sectionsep 
+%\runsubsection{Designer, Fabricator}
+%\hfill
+%\location{ February 2015 - June 2016}
+%\descript{CNC Router Personal Project}
+%\begin{tightemize}
+%
+%\item Conceptualized with CAD software and fabricated using jigs and power tools
+%\item 41”x24”x5” cutting envelope facilitated the creation of self-designed longboard skateboards for sale 
+%\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\sectionsep
+\section{Publications}
+\fontsize{10pt}{10pt}\selectfont
+Roy, V., \textcolor{black}{\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont\bfseries Russell, D.}, Chakrobarti, S., Hebert, M. (In Press). "Using Convolutional Neural Networks on Optical Flow for Visual Object Tracking." Robotics Institute Summer Scholars Working Papers Journal
+
+\vspace{.5em}
+Jiang, Y., \textcolor{black}{\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont\bfseries Russell, D.}, Godisart, T., Banerjee, N. K., and Banerjee, S. (2018). "Hardware Synchronization of Multiple Kinects and Microphones for 3D Audiovisual Spatiotemporal Data Capture." International Conference on Multimedia and Expo (ICME)\\
+\vspace{.15em}
+  \textbullet{} Gave oral presentation at ICME on work
+
+\vspace{.5em}
+\textcolor{black}{\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont\bfseries Russell, D.}, Bern, J., Coros, S. (2017). "Generalizable Pose Estimation for Soft Robots Using RFID Sensing." Robotics Institute Summer Scholars Working Papers Journal 
+
+%\vspace{.3em}
+%Bern, J., \textcolor{black}{\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont\bfseries Russell, D.}, Coros, S. (Under Review) "Model-based  Pose  Estimation  of  Soft  Robots." International Conference on Robotics and Automation (ICRA2018)
+
+
+%Jiang Y., \textcolor{black}{\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont\bfseries Russell, D.}, Quant H., Guo L., Lamb N., Godisart T., Banerjee S. and Banerjee N. K. (Under Review)
+%"Hardware Synchronization of Multiple Kinects and Microphones for 3D Audiovisual Spatiotemporal Data Capture."  IEEE International Conference on Multimedia \& Expo (ICME2018)
+%\fontsize{12pt}{12pt}\selectfont
+
+%\begin{minipage}[t]{.35\textwidth}
+%\section{Activities}
+%%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+%%\begin{tightemize}
+% \textcolor{black}{\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont\bfseries Teaching Assistant}, Introduction to \hfill\break Programming, Clarkson University\\
+%% \textcolor{black}{\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont\bfseries Webmaster}, Clarkson Honors Program\\
+% \textcolor{black}{\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont\bfseries Admission Ambassador}, Clarkson \hfill \break Honors Program\\ 
+% \textcolor{black}{\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont\bfseries Tutor}, Clarkson Student Success Center\\
+% \textcolor{black}{\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont\bfseries Member}, Clarkson Innovation Network\\
+% \textcolor{black}{\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont\bfseries Member}, Clarkson Ultimate Frisbee Team\\
+%%\end{tightemize}
+%\end{minipage}
+%\hfill
+%\begin{minipage}[t]{.38\textwidth}
+%\section{Awards}
+%%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+%%\begin{tightemize}
+% \textbullet{} Barry Goldwater Scholarship\\
+% \textbullet{} Sophomore Computer Science Award,\hfill \break Clarkson University \\
+% \textbullet{} NSF REU recipient \\
+% \textbullet{} Best Presentation, SURE conference section\\
+% \textbullet{} Clarkson University Presidential Scholar\\
+% %\textbullet{} National AP Scholar\\
+%%\end{tightemize}
+%\end{minipage}
+%\hfill
+%\begin{minipage}[t]{.16\textwidth}
+%\section{Skills}
+%%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+%%\begin{tightemize}
+% Python \\
+% MATLAB\\
+% C++\\
+% Linux\\
+% Pytorch\\
+% Java\\
+%%\end{tightemize}
+%\end{minipage}
+%
+%
+\end{document}  \documentclass[]{article}
